@@ -16,19 +16,21 @@ function App() {
     )
   }, [])
 
-  return  
+  return  (
     <div>
 
-      {(typeof data.members === 'undefined') ? (
+      {/* {(typeof data.members === 'undefined') ? (
         <p>Loading...</p>
       ) : (
         data.members.map((member, i) => (
           <p key={i}>{member}</p>
         ))
-      )}
+      )} */}
+
+      <p>Hello :)</p>
 
     </div>
-
+  )
 }
 
 export default App
