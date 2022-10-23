@@ -3,12 +3,13 @@ import React, { useEffect, useState} from "react";
 
 const [data, setData] = useState("")
 
-function App() {
+export function App() {
 
   useEffect(() => {
     fetch("/").then(
       res => res.json()
-    ).then(
+    )
+    .then(
       data => {
         setData(data)
         console.log(data)
@@ -33,4 +34,5 @@ function App() {
   )
 }
 
-export default App
+// module.exports;
+// export = App;
