@@ -3,6 +3,8 @@ import glob
 import matplotlib.pyplot as plt
 %matplotlib inline
 
+# taken from here....
+
 latest_year = 2020
 earliest_year = 2003
 
@@ -23,6 +25,8 @@ for year in range(earliest_year, latest_year + 1):
     team_against_li.append(team_against_df)
 
 team_against_frame = pd.concat(team_against_li, axis=0, ignore_index=True)
+
+# ... to here and added to app route in server.py
 
 # get all team for stats from CSVs then add to a list of dfs then turn that list of dfs into a single df
 
